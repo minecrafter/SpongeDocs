@@ -62,14 +62,59 @@ running a beta build of SpongeForge (build 1070) and Forge 1.8.9 (build 1694).
             aquatic-activation-range=32
             creature-activation-range=32
             minecraft {
+                ambient {
+                    bat=true
+                }
+                aquatic {
+                    squid=true
+                }
                 creature {
                     chicken=true
+                    cow=true
+                    entityhorse=true
+                    mushroomcow=true
+                    ocelot=true
+                    pig=true
+                    rabbit=true
                     sheep=true
+                    wolf=true
                 }
                 enabled=true
                 misc {
+                    armorstand=true
+                    arrow=true
+                    boat=true
                     fallingsand=true
                     item=true
+                    itemframe=true
+                    leashknot=true
+                    minecartchest=true
+                    minecartfurnace=true
+                    minecarthopper=true
+                    minecartrideable=true
+                    minecarttnt=true
+                    villager=true
+                    villagergolem=true
+                    xporb=true
+                }
+                monster {
+                    blaze=true
+                    cavespider=true
+                    creeper=true
+                    enderman=true
+                    endermite=true
+                    ghast=true
+                    giant=true
+                    guardian=true
+                    lavaslime=true
+                    pigzombie=true
+                    silverfish=true
+                    skeleton=true
+                    slime=true
+                    snowman=true
+                    spider=true
+                    witch=true
+                    zombie=true
                 }
             }
             misc-activation-range=16
@@ -177,11 +222,11 @@ ip-forwarding                             boolean   false       Allows bungeecor
 aliases                                   string    null        Alias will resolve conflicts when multiple
                                                                 plugins request a specific command. Correct
                                                                 syntax is
-                                                                ``<unqualified command>: <plugin name>``
+                                                                ``<unqualified command>=<plugin name>``
                                                                 Example: ::
 
                                                                     aliases = {
-                                                                        title: myPlugin
+                                                                        title=myPlugin
                                                                     }
 **Debug Options**
 dump-chunks-on-deadlock                   boolean   false       Dumps chunks in the event of a deadlock.
@@ -211,12 +256,22 @@ aquatic-activation-range                  integer   32          Range where aqua
 creature-activation-range                 integer   32          Range where creatures become active.
 **Minecraft Creatures**
 Creature <creature>                       boolean   true        Use activation range on <creature>. Permitted
-                                                                values: chicken, sheep.
+                                                                values: chicken, cow, entityhorse, mushroomcow,
+                                                                ocelot, pig, rabbit, sheep, wolf.
 enabled                                   boolean   true        Enable activation range on Minecraft entities.
 **Miscellaneous Entities**
 Misc <entity>                             boolean   true        Use activation range on <entity>. Permitted
-                                                                values: fallingsand, item.
+                                                                values: armorstand, arrow, boat, fallingsand,
+                                                                item, itemframe, leashknot, minecartchest,
+                                                                minecartfurnace, minecarthopper,
+                                                                minecartrideable, minecarttnt, villager,
+                                                                villagergolem, xporb. 
 **Minecraft Monsters**
+Monster <monster>                         boolean   true        Use activation range on <monster>. Permitted
+                                                                values: blaze, cavespider, creeper, enderman,
+                                                                endermite, ghast, giant, guardian, lavaslime,
+                                                                pigzombie, silverfish, skeleton, slime,
+                                                                snowman, spider, witch, zombie.
 misc-activation-range                     integer   16          Range where misc entities become active.
 monster-activation-range                  integer   32          Range where monsters are activated.
 **Exploits**

@@ -255,6 +255,8 @@ ambient-activation-range                  integer   32          Range where ambi
 aquatic-activation-range                  integer   32          Range where aquatic entities become active.
 creature-activation-range                 integer   32          Range where creatures become active.
 **Minecraft Creatures**
+Ambient (bat)                             boolean   true        Use activation range on bats.
+Aquatic (squid)                           boolean   true        Use activation range on squid.
 Creature <creature>                       boolean   true        Use activation range on <creature>. Permitted
                                                                 values: chicken, cow, entityhorse, mushroomcow,
                                                                 ocelot, pig, rabbit, sheep, wolf.

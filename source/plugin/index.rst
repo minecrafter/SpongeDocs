@@ -50,4 +50,5 @@ Contents
     manager
     debugging
     messagechannels
+    translations
     tutorials

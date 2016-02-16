@@ -3,7 +3,9 @@ Comparing Bukkit to Sponge
 ==========================
 
 While the BukkitAPI is notably different to SpongAPI, there are some Events and classes which have an equivalent. This
-page is intended to provide a (probably incomplete) list to help former Bukkit devs out when first trying SpongeAPI.
+page is intended to provide a (probably incomplete) list to help former Bukkit devs out when first trying SpongeAPI. The
+table will recieve updates from time to time. If you discovered that something's missing, report it on the
+`forums <https://forums.spongepowered.org/>`_ or the `SpongeDocs Issue Tracker <https://github.com/SpongePowered/SpongeDocs/issues>`_
 
 You can view the table here:
-`Sponge to Bukkit comparison Table on GoogleDrive <https://docs.google.com/spreadsheets/d/1phlRmbPHCVhRIaZBi9xMjUuiDQkW-j8rSEV_tQnD47E/edit?usp=sharing>`_
+`Sponge to Bukkit comparison Table on GoogleSheets <https://docs.google.com/spreadsheets/d/1phlRmbPHCVhRIaZBi9xMjUuiDQkW-j8rSEV_tQnD47E/edit?usp=sharing>`_

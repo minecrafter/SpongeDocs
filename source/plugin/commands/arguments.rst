@@ -139,7 +139,7 @@ Overview of the ``GenericArguments`` command elements
 +----------------------------+-----------------------------------------------------------------------------------------+-------------------------------+
 | ``flags``                  | Returns a builder for command flags (e.g. ``/cmd [-a] [-b <value>]``).                  | Short Flag: one ``Boolean``   |
 |                            |                                                                                         |                               |
-|                            | See `Flags`_                                                                            | Long Flag: one ``String``     |
+|                            | See :doc:`flags`                                                                        | Long Flag: one ``String``     |
 |                            |                                                                                         |                               |
 |                            |                                                                                         | Value Flag: inherited         |
 +----------------------------+-----------------------------------------------------------------------------------------+-------------------------------+
@@ -149,14 +149,9 @@ Overview of the ``GenericArguments`` command elements
 
 .. tip::
 
-    See the `source on GenericArguments
-    <https://github.com/SpongePowered/SpongeAPI/blob/master/src/main/java/org/spongepowered/api/command/args/GenericArguments.java>`_
+    See the `javadocs on GenericArguments
+    <https://jd.spongepowered.org/org/spongepowered/api/command/args/GenericArguments.html>`_
     for more information.
-
-Flags
-=====
-
-
 
 Custom Command Elements
 =======================
@@ -239,3 +234,9 @@ Example: ``Vector2i`` command element usage
         .arguments(new Vector2iCommandElement(Text.of("coordinates")))
         .executor(new MyCommandExecutor())
         .build();
+
+.. tip ::
+    
+    Look at the `source code
+    <https://github.com/SpongePowered/SpongeAPI/blob/master/src/main/java/org/spongepowered/api/command/args/GenericArguments.java>`_
+    of the ``GenericArguments`` class for more examples.

@@ -149,13 +149,14 @@ Overview of the ``GenericArguments`` command elements
 
 .. tip::
 
-    See the `documentation for GenericArguments <https://jd.spongepowered.org/org/spongepowered/api/command/args/GenericArguments.html>`_
+    See the `source on GenericArguments
+    <https://github.com/SpongePowered/SpongeAPI/blob/master/src/main/java/org/spongepowered/api/command/args/GenericArguments.java>`_
     for more information.
 
 Flags
 =====
 
-Coming soon...
+
 
 Custom Command Elements
 =======================
@@ -233,15 +234,8 @@ Example: ``Vector2i`` command element usage
 
     // /plottp <x> <y>
     CommandSpec myCommandSpec = CommandSpec.builder()
-            .description(Text.of("Teleport to a plot"))
-            .permission("myplugin.command.plot.tp")
-
-            .arguments(new Vector2iCommandElement(Text.of("coordinates")))
-
-            .executor(new MyCommandExecutor())
-            .build();
-
-.. tip::
-
-    Look at the `source code <https://github.com/SpongePowered/SpongeAPI/blob/master/src/main/java/org/spongepowered/api/util/command/args/GenericArguments.java>`_
-    of the ``GenericArguments`` class for more examples.
+        .description(Text.of("Teleport to a plot"))
+        .permission("myplugin.command.plot.tp")
+        .arguments(new Vector2iCommandElement(Text.of("coordinates")))
+        .executor(new MyCommandExecutor())
+        .build();

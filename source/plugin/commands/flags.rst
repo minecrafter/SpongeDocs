@@ -33,8 +33,24 @@ we are checking if the ``args`` for the command has a value for ``s``.
         src.sendMessage(Text.of("The command flag was not specified."));
     }
 
+Permission Flags
+~~~~~~~~~~~~~~~~
+
+Our flags so far are great, but what if we wanted to have it so that a player needs a permission to use a flag? We can
+instead use the ``permissionFlag()`` method on our flag builder. This will require the player to have a specific
+permission to run the command with the flag. An example of this is below:
+
+.. code-block:: java
+    
+    .arguments(GenericArguments.flags()
+        .permissionFlag("myplugin.command.flag", "s")
+        .buildWith(GenericArguments.none()))
+
+If a player does not have the permission ``myplugin.command.flag``, then they will not be allowed to execute our
+command with the command flag ``s``.
+
 Value Flags
-===========
+~~~~~~~~~~~
 
 Booleans can be great, but what if we wanted flags for things such as strings or integers? This is where value flags
 come into play. We simply need to use the ``valueFlag()`` method on our flag builder. Using the ``valueFlag()`` method,
